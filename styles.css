@@ -1,10 +1,11 @@
 /* Estilos básicos para la página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Estilo del encabezado */
@@ -13,6 +14,16 @@ header {
     color: white;
     padding: 1em 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
 }
 
 /* Estilo de las secciones */
@@ -24,6 +35,12 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
 /* Estilo de los enlaces */
 a {
     color: #4CAF50;
@@ -32,4 +49,41 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Estilo de la imagen de perfil */
+#profile img {
+    display: block;
+    margin: 0 auto 1em auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Estilo de la lista de redes sociales */
+#social-media ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#social-media li {
+    display: inline;
+    margin-right: 1em;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section {
+        margin: 1em;
+        padding: 0.5em;
+    }
 }
